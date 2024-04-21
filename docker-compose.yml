@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+        - "8000:8000"
+    environment:
+      REGISTRY_SERVER: service-registry
