@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Disable logging by setting the root level to OFF -->
+    <root level="OFF" />
+</configuration>

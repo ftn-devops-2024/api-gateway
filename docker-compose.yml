@@ -9,3 +9,8 @@ services:
         - "8000:8000"
     environment:
       REGISTRY_SERVER: service-registry
+      MANAGEMENT_METRICS_TAGS_APPLICATION: api-gateway
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo:4317
+      OTEL_SERVICE_NAME: api-gateway
+      OTEL_RESOURCE_ATTRIBUTES: compose_service=api-gateway
+      OTEL_METRICS_EXPORTER: none
